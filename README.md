@@ -1,4 +1,3 @@
-
 <h1  align="center">Hi 👋, I'm Osman Burak ERGEN</h1>
 
 <h3  align="center">A Javascript developer from Turkey</h3>
@@ -36,13 +35,12 @@
 <br />
 
 - 🔭 I’m currently working on
-  -  [News App](https://github.com/oburakergen/news-workspace)
-  -  [Lapjs](https://github.com/oburakergen/lapjs)
-  -  [Coin App](https://github.com/oburakergen/coin-app)
-  -  [Faldio App](https://github.com/oburakergen/faldioapp)
--  I’m looking to collaborate on [Lapjs](https://github.com/oburakergen/lapjs)
--  How to reach me **[burak.ergen@outlook.com.tr](burak.ergen@outlook.com.tr)**
--  Check my site **[burak.vercel.app](https://burak.vercel.app/)**
+  - [News App](https://github.com/oburakergen/news-workspace)
+  - [Lapjs](https://github.com/oburakergen/lapjs)
+  - [Coin App](https://github.com/oburakergen/coin-app)
+  - [Faldio App](https://github.com/oburakergen/faldioapp)
+- I’m looking to collaborate on [Lapjs](https://github.com/oburakergen/lapjs)
+- How to reach me **[burak.ergen@outlook.com.tr](burak.ergen@outlook.com.tr)**
+- Check my site **[burak.vercel.app](https://burak.vercel.app/)**
 
-
-[//]: # (&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github-readme-stats.vercel.app/api?username=oburakergen&show_icons=true&locale=en"  alt="oburakergen" />)
+[//]: # '    <img src="https://github-readme-stats.vercel.app/api?username=oburakergen&show_icons=true&locale=en"  alt="oburakergen" />'
