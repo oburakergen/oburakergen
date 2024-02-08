@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+import { fontConfig, tailwindConfig } from "./config";
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -11,19 +14,21 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   modules: [
+    "@nuxtjs/google-fonts",
+    "@nuxtjs/tailwindcss",
     [
       "@pinia/nuxt",
       {
         autoImports: ["defineStore", "acceptHMRUpdate"],
       },
     ],
-    "@nuxtjs/tailwindcss",
     "@nuxtjs/sitemap",
     "@vueuse/nuxt",
     "@nuxtjs/eslint-module",
     "@nuxt/image",
-    "@nuxtjs/google-fonts",
     "@nuxtjs/robots",
     // "@nuxtjs/stylelint-module",
   ],
+  googleFonts: fontConfig,
+  tailwindcss: tailwindConfig,
 });
