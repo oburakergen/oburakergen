@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-import { fontConfig, tailwindConfig } from "./config";
+import { fontConfig, tailwindConfig, i18nConfig } from "./config";
 
 export default defineNuxtConfig({
   app: {
@@ -25,9 +25,10 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxtjs/eslint-module",
     "@nuxtjs/seo",
-      "@nuxtjs/i18n"
+    "@nuxtjs/i18n",
     // "@nuxtjs/stylelint-module",
   ],
   googleFonts: fontConfig,
   tailwindcss: tailwindConfig,
+  i18n: i18nConfig,
 });

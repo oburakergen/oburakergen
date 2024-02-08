@@ -1,9 +1,10 @@
-export default defineI18nConfig(() => ({
+export default {
   legacy: false,
   detectBrowserLanguage: {
     useCookie: true,
     cookieKey: "site-lang",
-    redirectOn: "root", // recommended
+    redirectOn: "root",
+    alwaysRedirect: true,
   },
   locales: [
     {
@@ -18,6 +19,6 @@ export default defineI18nConfig(() => ({
     },
   ],
   lazy: true,
-  langDir: "../lang/",
+  langDir: "lang/",
   defaultLocale: "en",
-}));
+};
