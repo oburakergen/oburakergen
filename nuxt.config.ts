@@ -25,7 +25,6 @@ export default defineNuxtConfig({
     "@nuxtjs/sitemap",
     "@vueuse/nuxt",
     "@nuxtjs/eslint-module",
-    "@nuxt/image",
     "@nuxtjs/robots",
     // "@nuxtjs/stylelint-module",
   ],
