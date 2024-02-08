@@ -22,10 +22,10 @@ export default defineNuxtConfig({
         autoImports: ["defineStore", "acceptHMRUpdate"],
       },
     ],
-    "@nuxtjs/sitemap",
     "@vueuse/nuxt",
     "@nuxtjs/eslint-module",
-    "@nuxtjs/robots",
+    "@nuxtjs/seo",
+      "@nuxtjs/i18n"
     // "@nuxtjs/stylelint-module",
   ],
   googleFonts: fontConfig,

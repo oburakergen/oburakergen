@@ -42,6 +42,6 @@
   - [Faldio App](https://github.com/oburakergen/faldioapp)
 - I’m looking to collaborate on [Lapjs](https://github.com/oburakergen/lapjs)
 - How to reach me **[burak.ergen@outlook.com.tr](burak.ergen@outlook.com.tr)**
-- Check my site **[burak.vercel.app](https://burak.vercel.app/)**
+- Check my site **[burakergen.vercel.app](https://burakergen.vercel.app/)**
 
 [//]: # '    <img src="https://github-readme-stats.vercel.app/api?username=oburakergen&show_icons=true&locale=en"  alt="oburakergen" />'

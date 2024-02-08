@@ -1,5 +1,5 @@
-import fontConfig from './font';
-import tailwindConfig from './tailwind';
+import fontConfig from './font.config';
+import tailwindConfig from './tailwind.config';
 
 export {
     fontConfig,
