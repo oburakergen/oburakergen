@@ -1,8 +1,5 @@
-import type { ModuleOptions } from "@nuxtjs/tailwindcss";
-
-const tailwindConfig: ModuleOptions = {
+export default {
   editorSupport: true,
-  disableHmrHotfix: false,
   quiet: false,
   cssPath: "~/assets/css/tailwind.scss",
   configPath: "tailwind.config",
@@ -10,5 +7,3 @@ const tailwindConfig: ModuleOptions = {
   config: {},
   viewer: true,
 };
-
-export default tailwindConfig;

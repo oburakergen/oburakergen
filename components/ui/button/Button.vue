@@ -4,11 +4,11 @@ import { Primitive, type PrimitiveProps } from "radix-vue";
 import { type ButtonVariants, buttonVariants } from ".";
 import { cn } from "@/lib/utils";
 
-interface Props extends PrimitiveProps {
-  variant?: ButtonVariants["variant"];
-  size?: ButtonVariants["size"];
+interface props extends primitiveprops {
+  variant?: buttonvariants["variant"];
+  size?: buttonvariants["size"];
   as?: string;
-  class?: HTMLAttributes["class"];
+  class?: htmlattributes["class"];
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -24,4 +24,4 @@ const props = withDefaults(defineProps<Props>(), {
   >
     <slot />
   </Primitive>
-</template>
+</template><template><Primitive<template><Primitive

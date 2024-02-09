@@ -1,8 +1,9 @@
-export default {
-  legacy: false,
+import type { ModuleOptions } from "@nuxtjs/i18n";
+
+const i18nConfig: ModuleOptions = {
   detectBrowserLanguage: {
     useCookie: true,
-    cookieKey: "site-lang",
+    cookieKey: "site_lang",
     redirectOn: "root",
     alwaysRedirect: true,
   },
@@ -22,3 +23,5 @@ export default {
   langDir: "lang/",
   defaultLocale: "en",
 };
+
+export default i18nConfig;

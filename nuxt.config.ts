@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
+import { defineNuxtConfig } from "nuxt/config";
+
 import { fontConfig, tailwindConfig, i18nConfig } from "./config";
 
 export default defineNuxtConfig({
@@ -19,16 +21,22 @@ export default defineNuxtConfig({
     [
       "@pinia/nuxt",
       {
-        autoImports: ["defineStore", "acceptHMRUpdate"],
+        storesDirs: ["./stores/**"],
       },
     ],
     "@vueuse/nuxt",
     "@nuxtjs/eslint-module",
     "@nuxtjs/seo",
     "@nuxtjs/i18n",
-    // "@nuxtjs/stylelint-module",
+    "@nuxt/content",
+    // "nuxt-mongoose",
   ],
   googleFonts: fontConfig,
   tailwindcss: tailwindConfig,
   i18n: i18nConfig,
+  eslint: {
+    exclude: ["**/node_modules/**", "/dist/**"],
+    lintOnStart: false,
+    emitError: true,
+  },
 });
