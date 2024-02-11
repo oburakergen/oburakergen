@@ -1,14 +1,10 @@
-import type { Config } from "tailwindcss";
-import animate from "tailwindcss-animate";
+const animate = require("tailwindcss-animate");
 
 /** @type {import('tailwindcss').Config} */
-const tailwindConfig: Config = {
-  content: ["./src/**/*.{vue,js,ts,jsx,tsx}"],
+module.exports = {
   darkMode: ["class"],
   safelist: ["dark"],
-  corePlugins: {
-    preflight: false,
-  },
+
   theme: {
     container: {
       center: true,
@@ -18,29 +14,6 @@ const tailwindConfig: Config = {
       },
     },
     extend: {
-      screens: {
-        xs: { min: "280px", max: "480px" },
-        sm: { min: "481px", max: "640px" },
-        md: { min: "641px", max: "768px" },
-        lg: { min: "769px", max: "1024px" },
-        xl: { min: "1025px", max: "1400px" },
-      },
-      fontFamily: {
-        sans: ["Roboto", "sans-serif"],
-      },
-      fontSize: {
-        xs: "0.75rem",
-        sm: "0.875rem",
-        base: "1rem",
-        lg: "1.125rem",
-        xl: "1.25rem",
-      },
-      fontWeight: {
-        light: "300",
-        normal: "400",
-        medium: "500",
-        bold: "700",
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -81,24 +54,23 @@ const tailwindConfig: Config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-        xs: "calc(var(--radius) - 4px)",
       },
       keyframes: {
         "accordion-down": {
-          from: { height: "0" },
+          from: { height: 0 },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+          to: { height: 0 },
         },
         "collapsible-down": {
-          from: { height: "0" },
+          from: { height: 0 },
           to: { height: "var(--radix-collapsible-content-height)" },
         },
         "collapsible-up": {
           from: { height: "var(--radix-collapsible-content-height)" },
-          to: { height: "0" },
+          to: { height: 0 },
         },
       },
       animation: {
@@ -111,5 +83,3 @@ const tailwindConfig: Config = {
   },
   plugins: [animate],
 };
-
-export default tailwindConfig;

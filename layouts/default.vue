@@ -2,7 +2,9 @@
 
 <template>
   <div>
-    <h1>Portfolio slug</h1>
+    <Header />
+    <Navigation is-open="true">Test</Navigation>
+    <slot />
   </div>
 </template>
 

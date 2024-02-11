@@ -1,3 +1,10 @@
+<script setup lang="ts">
+definePageMeta({
+  layout: false,
+});
+</script>
 <template>
-  <NuxtPage />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>

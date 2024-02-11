@@ -14,6 +14,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+  components: false,
   devtools: { enabled: true },
   modules: [
     "@nuxtjs/google-fonts",
@@ -29,6 +30,7 @@ export default defineNuxtConfig({
     "@nuxtjs/seo",
     "@nuxtjs/i18n",
     "@nuxt/content",
+    "shadcn-nuxt",
     // "nuxt-mongoose",
   ],
   googleFonts: fontConfig,

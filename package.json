@@ -14,13 +14,14 @@
     "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
+    "@radix-icons/vue": "^1.0.0",
+    "@radix-ui/react-icons": "^1.3.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-vue-next": "^0.323.0",
     "nuxt": "^3.10.1",
     "pinia": "^2.1.7",
     "radix-vue": "^1.4.2",
-    "sass": "^1.70.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
     "vue": "^3.4.15",
@@ -43,6 +44,7 @@
     "eslint-plugin-prettier": "^5.1.3",
     "nuxt-mongoose": "^1.0.5",
     "prettier": "^3.2.5",
+    "sass": "^1.70.0",
     "shadcn-nuxt": "^0.9.0"
   }
 }

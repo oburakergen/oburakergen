@@ -1,7 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>portfolio</div>
+  <header>
+    <h1>Header</h1>
+  </header>
 </template>
 
 <style scoped></style>
