@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header>
-    <h1><slot /></h1>
-  </header>
+  <div>
+    <h1>Blog slug</h1>
+  </div>
 </template>
 
 <style scoped></style>

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-definePageMeta({
-  layout: false,
-});
+import useResponsive from "~/composables/useResponsive";
+
+const { contentLayout } = useResponsive();
 </script>
 <template>
-  <NuxtLayout>
+  <NuxtLayout :name="contentLayout">
     <NuxtPage />
   </NuxtLayout>
 </template>

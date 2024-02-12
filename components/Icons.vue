@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header>
-    <h1><slot /></h1>
-  </header>
+  <div class="test">
+    <slot name="icons"></slot>
+  </div>
 </template>
 
 <style scoped></style>

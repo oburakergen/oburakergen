@@ -8,13 +8,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Osman Burak ERGEN | Javascript Developer",
-      meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-      ],
+      meta: [{ charset: "utf-8" }, { name: "viewport", content: "width=device-width, initial-scale=1" }],
     },
   },
-  components: false,
   devtools: { enabled: true },
   modules: [
     "@nuxtjs/google-fonts",
@@ -40,5 +36,12 @@ export default defineNuxtConfig({
     exclude: ["**/node_modules/**", "/dist/**"],
     lintOnStart: false,
     emitError: true,
+  },
+  content: {
+    markdown: {
+      tags: {
+        p: "div",
+      },
+    },
   },
 });

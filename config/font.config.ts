@@ -1,10 +1,12 @@
 export default {
   families: {
-    Roboto: {
+    Poppins: {
       wght: [300, 400, 500, 700],
-      ital: [100],
     },
-    "Open Sans": true,
+    Roboto: {
+      wght: "200..700",
+      ital: "200..700",
+    },
   },
   display: "swap",
 };

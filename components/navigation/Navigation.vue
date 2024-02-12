@@ -12,10 +12,7 @@ const props = defineProps<{
 
 <template>
   <Transition name="fade">
-    <aside
-      v-show="isOpen"
-      :class="cn(navigationVariants({ variant }), props.class)"
-    >
+    <aside v-show="isOpen" :class="cn(navigationVariants({ variant }), props.class)">
       <slot />
     </aside>
   </Transition>

@@ -1,4 +1,4 @@
-const animate = require("tailwindcss-animate");
+import animate from "tailwindcss-animate";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -11,6 +11,9 @@ module.exports = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+      },
+      fontFamily: {
+        sans: ["Roboto", "Poppins", "sans-serif"],
       },
     },
     extend: {
@@ -54,6 +57,10 @@ module.exports = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        Roboto: "Roboto, sans-serif",
+        Poppins: "Poppins, sans-serif",
       },
       keyframes: {
         "accordion-down": {
