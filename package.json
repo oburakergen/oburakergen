@@ -2,6 +2,12 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
+  "version": "1.0.0",
+  "author": {
+    "email": "burak.ergen@outlook.com.tr",
+    "name": "Burak Ergen",
+    "url": "https://burakergen.vercel.app/"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -45,6 +51,12 @@
     "nuxt-mongoose": "^1.0.5",
     "prettier": "^3.2.5",
     "sass": "^1.70.0",
-    "shadcn-nuxt": "^0.9.0"
-  }
+    "shadcn-nuxt": "^0.9.0",
+    "typescript": "5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=7.0.0"
+  },
+  "license": "MIT"
 }
