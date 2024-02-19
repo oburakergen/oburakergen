@@ -4,7 +4,6 @@ import animate from "tailwindcss-animate";
 module.exports = {
   darkMode: ["class"],
   safelist: ["dark"],
-
   theme: {
     container: {
       center: true,

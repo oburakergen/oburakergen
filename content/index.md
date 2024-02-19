@@ -1,4 +1,4 @@
-::icons
+::div
 [![TypeScript](https://img.shields.io/badge/-Typescript-blue?style=flat-square&logo=typescript&logoColor=white)](https://typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-%2320232a.svg?style=flat-square&logo=React&logoColor=%2361DAFB)](https://pt-br.reactjs.org/)
 [![Vue](https://img.shields.io/badge/Vue.js-35495E?style=flat-square&logo=vue.js&logoColor=white)](https://vuejs.org/)

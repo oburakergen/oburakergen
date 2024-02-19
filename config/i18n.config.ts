@@ -19,7 +19,7 @@ const i18nConfig: ModuleOptions = {
       file: "tr-TR.ts",
     },
   ],
-  lazy: true,
+  lazy: false,
   langDir: "lang/",
   defaultLocale: "en",
 };

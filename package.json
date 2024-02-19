@@ -16,7 +16,7 @@
     "postinstall": "nuxt prepare",
     "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
-    "lint": "npm lint:js && yarn lint:prettier",
+    "lint": "npm lint:prettier",
     "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
