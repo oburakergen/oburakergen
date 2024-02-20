@@ -12,19 +12,19 @@ const props = defineProps<{
 <template>
   <ul :class="cn('relative flex flex-col items-center gap-0.5', props.class)">
     <li :class="cn(navigationMenuTriggerStyle(), 'bg-transparent')">
-      <NavigationLink to="/" class="text-gray-500 text-2xl font-['Poppins']"> Home </NavigationLink>
+      <NavigationLink to="/" class="menu-link"> Home </NavigationLink>
     </li>
     <li :class="cn(navigationMenuTriggerStyle(), 'bg-transparent')">
-      <NavigationLink to="/about" class="text-gray-500 text-2xl font-['Poppins']"> About </NavigationLink>
+      <NavigationLink to="/about" class="menu-link"> About </NavigationLink>
     </li>
     <li :class="cn(navigationMenuTriggerStyle(), 'bg-transparent')">
-      <NavigationLink to="/portfolio" class="text-gray-500 text-2xl font-['Poppins']"> Portfolio </NavigationLink>
+      <NavigationLink to="/portfolio" class="menu-link"> Portfolio </NavigationLink>
     </li>
     <li :class="cn(navigationMenuTriggerStyle(), 'bg-transparent')">
-      <NavigationLink to="/blog" class="text-gray-500 text-2xl font-['Poppins']"> Blog </NavigationLink>
+      <NavigationLink to="/blog" class="menu-link"> Blog </NavigationLink>
     </li>
     <li :class="cn(navigationMenuTriggerStyle(), 'bg-transparent')">
-      <NavigationLink to="/contact" class="text-gray-500 text-2xl font-['Poppins']"> Contact </NavigationLink>
+      <NavigationLink to="/contact" class="menu-link"> Contact </NavigationLink>
     </li>
   </ul>
 </template>

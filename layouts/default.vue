@@ -9,7 +9,9 @@ import NavigationItem from "~/components/navigation/NavigationItem.vue";
       <NavigationItem variant="left" />
     </Navigation>
     <div class="col-span-2">
-      <slot />
+      <div class="relative container mx-auto overflow-auto">
+        <slot />
+      </div>
     </div>
   </div>
 </template>

@@ -1,0 +1,18 @@
+@layer components {
+  .logo
+  {
+    @apply font-black text-3xl uppercase font-['Poppins'] tracking-widest dark:text-white;
+    a {
+      @apply hover:animate-pulse;
+    }
+  }
+
+  .menu-link
+  {
+    @apply text-gray-500 text-2xl font-['Poppins'] hover:text-gray-900 dark:text-white dark:hover:text-gray-300;
+
+    &.active {
+      @apply text-secondary-foreground dark:text-primary-foreground;
+    }
+  }
+}
