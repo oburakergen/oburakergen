@@ -12,7 +12,7 @@ module.exports = {
         "2xl": "1400px",
       },
       fontFamily: {
-        sans: ["Roboto", "Poppins", "sans-serif"],
+        sans: ["Montserrat", "Poppins", "sans-serif"],
       },
     },
     extend: {
@@ -58,7 +58,7 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        Roboto: "Roboto, sans-serif",
+        Montserrat: "Montserrat, sans-serif",
         Poppins: "Poppins, sans-serif",
       },
       keyframes: {

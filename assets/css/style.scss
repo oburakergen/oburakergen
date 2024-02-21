@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "components/typography";
+@import "components/typography", "components/list";
 
 @layer base {
   :root {
@@ -74,6 +74,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-['Roboto'];
+    @apply bg-background text-foreground font-['Montserrat'];
   }
 }

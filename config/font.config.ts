@@ -3,7 +3,7 @@ export default {
     Poppins: {
       wght: [400, 700],
     },
-    Roboto: {
+    Montserrat: {
       wght: "200..700",
       ital: "200..700",
     },
