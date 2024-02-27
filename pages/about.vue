@@ -1,9 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Separator } from "~/components/ui/separator";
+</script>
 
 <template>
   <div class="relative w-full h-auto flex flex-col gap-8 py-16 font-['Montserrat'] text-gray-500">
     <div class="me_title mb-8">
-      <h1 class="font-bold text-3xl text-primary subpixel-antialiased">About Me</h1>
+      <h2 class="font-bold text-3xl text-primary subpixel-antialiased">About Me</h2>
     </div>
     <div class="me_photo">
       <img src="https://avatars.githubusercontent.com/u/72213815?v=4" alt="me" class="rounded-full h-40 w-40" />
@@ -69,26 +71,79 @@
       </ul>
     </div>
     <Separator orientation="horizontal" decorative />
-    <div class="me_experience pt-8">
-      <div class="title">Experience</div>
-      <div class="relative">
-        <ul class="life">
-          <li>
-            <div>2014-2018</div>
-            <div class="flex flex-col">
-              <h3>Burak</h3>
-              <h3>MAster Degree</h3>
-            </div>
-          </li>
 
-          <li>
-            <div>2014-2018</div>
-            <div class="flex flex-col">
-              <h3>Burak</h3>
-              <h3>MAster Degree</h3>
+    <div class="bg-white py-6 flex flex-col justify-center sm:py-12">
+      <div class="py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0">
+        <div class="relative text-gray-700 antialiased text-sm font-semibold">
+          <div class="hidden sm:block w-1 bg-primary absolute h-full left-1/2 transform -translate-x-1/2"></div>
+          <div class="mt-6 sm:mt-0 sm:mb-12">
+            <div class="flex flex-col sm:flex-row items-center">
+              <div class="flex justify-start w-full mx-auto items-center">
+                <div class="w-full sm:w-1/2 sm:pr-8">
+                  <div class="p-4 bg-white rounded shadow">
+                    <h1><small>2018-2019</small></h1>
+                    <div>Laraplay</div>
+                    <div><small>Software Specialist</small></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rounded-full bg-primary border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center"
+              ></div>
             </div>
-          </li>
-        </ul>
+          </div>
+
+          <div class="mt-6 sm:mt-0 sm:mb-12">
+            <div class="flex flex-col sm:flex-row items-center">
+              <div class="flex justify-end w-full mx-auto items-center">
+                <div class="w-full sm:w-1/2 sm:pl-8">
+                  <div class="p-4 bg-white rounded shadow">
+                    <h1><small>2019-2021</small></h1>
+                    <div>Vairosoft</div>
+                    <div><small>Software Specialist</small></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rounded-full bg-primary border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center"
+              ></div>
+            </div>
+          </div>
+
+          <div class="mt-6 sm:mt-0 sm:mb-12">
+            <div class="flex flex-col sm:flex-row items-center">
+              <div class="flex justify-start w-full mx-auto items-center">
+                <div class="w-full sm:w-1/2 sm:pr-8">
+                  <div class="p-4 bg-white rounded shadow">
+                    <h1><small>2022-2022</small></h1>
+                    <div>Icecube</div>
+                    <div><small>Software Specialist</small></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rounded-full bg-primary border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center"
+              ></div>
+            </div>
+          </div>
+
+          <div class="mt-6 sm:mt-0">
+            <div class="flex flex-col sm:flex-row items-center">
+              <div class="flex justify-end w-full mx-auto items-center">
+                <div class="w-full sm:w-1/2 sm:pl-8">
+                  <div class="p-4 bg-white rounded shadow">
+                    <h1><small>2022-2023</small></h1>
+                    <div>Arma Group Holding</div>
+                    <div><small>Computer Engineering</small></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rounded-full bg-primary border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center"
+              ></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

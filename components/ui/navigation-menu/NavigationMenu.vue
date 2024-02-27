@@ -14,7 +14,6 @@ const props = defineProps<NavigationMenuRootProps & { class?: HTMLAttributes["cl
 const emits = defineEmits<NavigationMenuRootEmits>();
 
 const delegatedProps = computed(() => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { class: _, ...delegated } = props;
 
   return delegated;
