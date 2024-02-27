@@ -11,7 +11,6 @@ import Header from "~/components/header/Header.vue";
       </div>
     </div>
   </div>
-  <div></div>
 </template>
 
 <style scoped></style>

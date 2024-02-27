@@ -1,5 +1,4 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="relative w-full h-auto flex flex-col gap-8 py-16 font-['Montserrat'] text-gray-500">
