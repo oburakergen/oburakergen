@@ -1,13 +1,22 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useSeoMeta({
+  title: "My Amazing Site",
+  ogTitle: "My Amazing Site",
+  description: "This is my amazing site, let me tell you all about it.",
+  ogDescription: "This is my amazing site, let me tell you all about it.",
+  ogImage: "https://example.com/image.png",
+  twitterCard: "summary_large_image",
+});
+</script>
 
 <template>
   <div class="container mx-auto">
     <div class="relative w-full h-screen flex items-center justify-center overflow-hidden">
       <div class="flex flex-col">
-        <div class="flex items-center">
-          <div class="photo">
+        <div class="flex flex-wrap items-center gap-4">
+          <div class="flex w-max xs:w-full sx:w-full content-center">
             <img
-              src="https://images.unsplash.com/photo-1631533943943-3e3e3e3e3e3e"
+              src="https://avatars.githubusercontent.com/u/72213815?v=4"
               alt="photo"
               class="w-40 h-40 rounded-full"
             />
