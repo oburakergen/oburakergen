@@ -4,7 +4,7 @@ import Header from "~/components/header/Header.vue";
 
 <template>
   <div class="relative">
-    <Header>Header</Header>
+    <Header />
     <div class="relative container mx-auto overflow-auto">
       <slot />
     </div>

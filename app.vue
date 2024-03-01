@@ -1,16 +1,24 @@
 <script setup lang="ts">
-import useResponsive from "~/composables/useResponsive";
+import { definePageMeta } from "#imports";
 
-const { contentLayout } = useResponsive();
+const { width: windowWidth } = useWindowSize();
 
+const layout = ref("default");
+
+onBeforeMount(() => {
+  if (windowWidth.value > 768) {
+    layout.value = "default";
+  } else {
+    layout.value = "mobile";
+  }
+  console.log(layout);
+});
 definePageMeta({
-  middleware: defineNuxtRouteMiddleware(() => {
-    console.log(contentLayout.value);
-  }),
+  middleware: "layout-global",
 });
 </script>
 <template>
-  <NuxtLayout :name="contentLayout">
+  <NuxtLayout :name="layout">
     <NuxtPage />
   </NuxtLayout>
 </template>
