@@ -1,6 +1,4 @@
-<script setup lang="ts">
-setPageLayout("mobile");
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <header>

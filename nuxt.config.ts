@@ -28,6 +28,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/content",
     "shadcn-nuxt",
+    "@nuxtjs/device",
     // "nuxt-mongoose",
   ],
   googleFonts: fontConfig,
@@ -38,6 +39,9 @@ export default defineNuxtConfig({
     lintOnStart: false,
     emitError: true,
   },
+  // device: {
+  //
+  // },
   content: {
     markdown: {
       tags: {

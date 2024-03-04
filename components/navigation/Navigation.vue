@@ -2,8 +2,6 @@
 import type { HTMLAttributes } from "vue";
 import { type NavigationVariants } from ".";
 
-setPageLayout("default");
-
 const props = defineProps<{
   class?: HTMLAttributes["class"];
   variant?: NavigationVariants["variant"];
