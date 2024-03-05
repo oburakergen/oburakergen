@@ -1,12 +1,4 @@
-<script setup lang="ts">
-definePageMeta({
-  layout: false,
-});
-
-const app = useNuxtApp();
-
-console.log("asd", app);
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="container mx-auto">

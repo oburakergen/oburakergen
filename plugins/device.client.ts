@@ -1,4 +1,4 @@
-import { useBreakpoints, useNavigatorLanguage } from "@vueuse/core";
+import { useBreakpoints } from "@vueuse/core";
 
 const getDevice = (breakpoints: string = "default") => {
   switch (breakpoints) {
@@ -29,7 +29,6 @@ export default defineNuxtPlugin({
     return {
       provide: {
         device: getDevice(breakpoints.active().value),
-        language: useNavigatorLanguage().language.value,
       },
     };
   },

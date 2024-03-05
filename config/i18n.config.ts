@@ -3,9 +3,8 @@ import type { ModuleOptions } from "@nuxtjs/i18n";
 const i18nConfig: ModuleOptions = {
   detectBrowserLanguage: {
     useCookie: true,
-    cookieKey: "site_lang",
+    cookieKey: "locale",
     redirectOn: "root",
-    alwaysRedirect: true,
   },
   locales: [
     {
@@ -21,6 +20,7 @@ const i18nConfig: ModuleOptions = {
   ],
   lazy: false,
   langDir: "lang/",
+  strategy: 'prefix_and_default',
   defaultLocale: "en",
 };
 
