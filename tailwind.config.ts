@@ -8,14 +8,19 @@ module.exports = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
       fontFamily: {
         sans: ["Montserrat", "Poppins", "sans-serif"],
       },
     },
     extend: {
+      screens: {
+        xs: { max: "480px" },
+        sm: { min: "481px", max: "640px" },
+        md: { min: "641px", max: "768px" },
+        lg: { min: "769px", max: "1024px" },
+        xl: { min: "1025px", max: "1400px" },
+        "2xl": "1401px",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

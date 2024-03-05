@@ -2,6 +2,10 @@
 definePageMeta({
   layout: false,
 });
+
+const app = useNuxtApp();
+
+console.log("asd", app);
 </script>
 
 <template>

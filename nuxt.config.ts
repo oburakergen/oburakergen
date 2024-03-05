@@ -1,7 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-
 import { defineNuxtConfig } from "nuxt/config";
-
 import { fontConfig, tailwindConfig, i18nConfig } from "./config";
 
 export default defineNuxtConfig({
@@ -10,8 +8,9 @@ export default defineNuxtConfig({
       title: "Osman Burak ERGEN | Javascript Developer",
       meta: [{ charset: "utf-8" }, { name: "viewport", content: "width=device-width, initial-scale=1" }],
     },
+    rootId: "burak",
   },
-  debug: true,
+  debug: process.env.NODE_ENV !== "production",
   devtools: { enabled: true },
   modules: [
     "@nuxtjs/google-fonts",
@@ -28,7 +27,6 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/content",
     "shadcn-nuxt",
-    "@nuxtjs/device",
     // "nuxt-mongoose",
   ],
   googleFonts: fontConfig,
@@ -39,9 +37,6 @@ export default defineNuxtConfig({
     lintOnStart: false,
     emitError: true,
   },
-  // device: {
-  //
-  // },
   content: {
     markdown: {
       tags: {

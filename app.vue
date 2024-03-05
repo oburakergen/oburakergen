@@ -1,10 +1,6 @@
-<script setup lang="ts">
-import useResponsive from "~/composables/useResponsive";
-
-const { contentLayout } = useResponsive();
-</script>
+<script setup lang="ts"></script>
 <template>
-  <NuxtLayout :name="contentLayout">
+  <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
 </template>
