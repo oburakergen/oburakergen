@@ -27,6 +27,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/content",
     "shadcn-nuxt",
+    "@hypernym/nuxt-anime",
     // "nuxt-mongoose",
   ],
   googleFonts: fontConfig,

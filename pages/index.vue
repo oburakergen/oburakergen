@@ -2,7 +2,7 @@
 
 <template>
   <div class="container mx-auto">
-    <div class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+    <div class="relative w-full h-screen xs:h-[90vh] sm:h-[90vh] flex items-center justify-center overflow-hidden">
       <div class="flex flex-col">
         <div class="flex flex-wrap items-center gap-4 justify-center">
           <div class="flex w-max xs:w-full sx:w-full">

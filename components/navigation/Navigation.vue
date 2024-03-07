@@ -10,7 +10,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="relative h-full min-h-screen w-max-[420px]" :class="props.class">
+  <div class="relative h-full min-h-screen shadow" :class="props.class">
     <div class="fixed h-full w-1/3 flex flex-col items-center justify-between py-6 left-0">
       <div class="text-center">
         <h1 class="logo">

@@ -34,7 +34,7 @@ export default defineNuxtPlugin({
   },
   hooks: {
     "app:suspense:resolve"() {
-      setPageLayout(getDevice(breakpoints.active().value));
+      // setPageLayout(getDevice(breakpoints.active().value));
     },
   },
 });

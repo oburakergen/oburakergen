@@ -61,6 +61,9 @@ module.exports = {
         Montserrat: "Montserrat, sans-serif",
         Poppins: "Poppins, sans-serif",
       },
+      height: {
+        "screen-half": "50vh",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },

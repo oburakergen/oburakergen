@@ -73,7 +73,8 @@
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground font-['Montserrat'];
+
+  #burak {
+    @apply relative bg-background text-foreground font-['Montserrat'] overflow-hidden;
   }
 }

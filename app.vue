@@ -1,6 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const layout = "custom";
+</script>
 <template>
-  <NuxtLayout>
+  <NuxtLayout :layout="layout">
     <NuxtPage />
   </NuxtLayout>
 </template>
