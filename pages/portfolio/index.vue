@@ -1,7 +1,7 @@
-<script setup lang="ts"></script>
+<script lang="ts" setup></script>
 
 <template>
-  <div>portfolio</div>
+  <div>Page: portfolio/index</div>
 </template>
 
 <style scoped></style>

@@ -17,12 +17,8 @@ logs
 .DS_Store
 .fleet
 .idea
-*.iml
-out
-gen
 
 # Local env files
 .env
 .env.*
 !.env.example
-

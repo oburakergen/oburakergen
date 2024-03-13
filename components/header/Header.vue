@@ -2,6 +2,7 @@
 import { HamburgerMenuIcon } from "@radix-icons/vue";
 import { ref, type Ref } from "vue";
 import NavigationItem from "@/components/navigation/NavigationItem.vue";
+import Button from "@/components/ui/button/Button.vue";
 
 const collapse: Ref<boolean> = ref(false);
 

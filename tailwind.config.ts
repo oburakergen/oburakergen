@@ -1,18 +1,17 @@
-import animate from "tailwindcss-animate";
+const animate = require("tailwindcss-animate");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
   safelist: ["dark"],
+  prefix: "",
+
   theme: {
     container: {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1440px",
-      },
-      fontFamily: {
-        sans: ["Montserrat", "Poppins", "sans-serif"],
+        "2xl": "1400px",
       },
     },
     extend: {
@@ -56,13 +55,6 @@ module.exports = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-      },
-      fontFamily: {
-        Montserrat: "Montserrat, sans-serif",
-        Poppins: "Poppins, sans-serif",
-      },
-      height: {
-        "screen-half": "50vh",
       },
       keyframes: {
         "accordion-down": {

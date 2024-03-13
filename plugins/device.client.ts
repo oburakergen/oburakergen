@@ -1,6 +1,6 @@
 import { useBreakpoints } from "@vueuse/core";
 
-const getDevice = (breakpoints: string = "default") => {
+const getDevice = (breakpoints: string = "default"): "default" | "mobile" => {
   switch (breakpoints) {
     case "mobile":
       return "mobile";
@@ -24,7 +24,7 @@ const breakpoints = useBreakpoints({
 
 export default defineNuxtPlugin({
   name: "device-plugin",
-  enforce: "post",
+  enforce: "pre",
   setup() {
     return {
       provide: {
@@ -34,7 +34,14 @@ export default defineNuxtPlugin({
   },
   hooks: {
     "app:suspense:resolve"() {
-      // setPageLayout(getDevice(breakpoints.active().value));
+      const appConfig = useAppConfig();
+
+      updateAppConfig({
+        ...appConfig,
+        layout: getDevice(breakpoints.active().value),
+      });
+
+      console.log("Device plugin: layout updated", appConfig.layout);
     },
   },
 });

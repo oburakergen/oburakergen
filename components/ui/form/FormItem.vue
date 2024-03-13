@@ -2,7 +2,7 @@
 import type { HTMLAttributes, InjectionKey } from "vue";
 import { provide } from "vue";
 import { useId } from "radix-vue";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
 
 const props = defineProps<{
   class?: HTMLAttributes["class"];

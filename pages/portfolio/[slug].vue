@@ -1,9 +1,7 @@
-<script setup lang="ts"></script>
+<script lang="ts" setup></script>
 
 <template>
-  <div>
-    <h1>Portfolio slug</h1>
-  </div>
+  <div>Page: portfolio/[slug]</div>
 </template>
 
 <style scoped></style>

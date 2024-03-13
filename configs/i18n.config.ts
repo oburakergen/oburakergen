@@ -19,8 +19,8 @@ const i18nConfig: ModuleOptions = {
     },
   ],
   lazy: false,
-  langDir: "lang/",
-  strategy: 'prefix_and_default',
+  langDir: "langs/",
+  strategy: "prefix_and_default",
   defaultLocale: "en",
 };
 

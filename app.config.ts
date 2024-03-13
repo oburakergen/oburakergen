@@ -1,4 +1,7 @@
 export default defineAppConfig({
-  name: "My App",
-  version: "1.0.0",
+  title: "Hello Nuxt",
+  layout: "default",
+  ui: {
+    primary: "red",
+  },
 });

@@ -36,10 +36,10 @@
 <br />
 
 - I’m currently working on
-  - [News App](https://github.com/oburakergen/news-workspace)
-  - [Lapjs](https://github.com/oburakergen/lapjs)
-  - [Coin App](https://github.com/oburakergen/coin-app)
-  - [Faldio App](https://github.com/oburakergen/faldioapp)
+    - [News App](https://github.com/oburakergen/news-workspace)
+    - [Lapjs](https://github.com/oburakergen/lapjs)
+    - [Coin App](https://github.com/oburakergen/coin-app)
+    - [Faldio App](https://github.com/oburakergen/faldioapp)
 - I’m looking to collaborate on [Lapjs](https://github.com/oburakergen/lapjs)
 - How to reach me **[burak.ergen@outlook.com.tr](burak.ergen@outlook.com.tr)**
 - Check my site **[burakergen.vercel.app](https://burakergen.vercel.app/)**

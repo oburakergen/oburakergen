@@ -2,10 +2,10 @@
 import { toTypedSchema } from "@vee-validate/zod";
 import * as z from "zod";
 import { Form, Field as FormField, useForm } from "vee-validate";
-import { FormItem, FormLabel, FormControl, FormMessage } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
+import { FormItem, FormLabel, FormControl, FormMessage } from "@/components/ui/form/index";
+import { Input } from "@/components/ui/input/index";
+import { Button } from "@/components/ui/button/index";
+import { Textarea } from "@/components/ui/textarea/index";
 
 const { t } = useI18n();
 const formSchema = toTypedSchema(

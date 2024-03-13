@@ -1,17 +1,19 @@
-declare module '#app' {
+declare module "#app" {
   interface NuxtApp {
-    $device: string
-    $language: string
-    $anime: any
+    $device: "default" | "mobile";
+    $language: string;
+    $anime: any;
+    appConfig: any;
   }
 }
 
-declare module 'vue' {
+declare module "vue" {
   interface ComponentCustomProperties {
-    $device: string
-    $language: string
-    $anime: any
+    $device: "default" | "mobile";
+    $language: string;
+    $anime: any;
+    appConfig: any;
   }
 }
 
-export {}
+export {};

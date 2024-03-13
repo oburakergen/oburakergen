@@ -1,48 +1,36 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-import { defineNuxtConfig } from "nuxt/config";
-import { fontConfig, tailwindConfig, i18nConfig } from "./config";
+import { tailwindConfig, i18nConfig } from "./configs";
 
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Osman Burak ERGEN | Javascript Developer",
-      meta: [{ charset: "utf-8" }, { name: "viewport", content: "width=device-width, initial-scale=1" }],
+      title: "Nuxt TypeScript Starter",
+      meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { hid: "description", name: "description", content: "" },
+      ],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
-    rootId: "burak",
+    pageTransition: { name: "page", mode: "out-in" },
   },
-  debug: process.env.NODE_ENV !== "production",
   devtools: { enabled: true },
-  modules: [
-    "@nuxtjs/google-fonts",
-    "@nuxtjs/tailwindcss",
-    [
-      "@pinia/nuxt",
-      {
-        storesDirs: ["./stores/**"],
-      },
-    ],
-    "@vueuse/nuxt",
-    "@nuxtjs/eslint-module",
-    "@nuxtjs/seo",
-    "@nuxtjs/i18n",
-    "@nuxt/content",
-    "shadcn-nuxt",
-    "@hypernym/nuxt-anime",
-    // "nuxt-mongoose",
-  ],
-  googleFonts: fontConfig,
-  tailwindcss: tailwindConfig,
-  i18n: i18nConfig,
+  debug: true,
+  typescript: {
+    typeCheck: true,
+    strict: true,
+  },
+  modules: ["@nuxtjs/eslint-module", "@nuxtjs/tailwindcss", "nuxt-mongoose", "@nuxtjs/i18n", "shadcn-nuxt"],
   eslint: {
     exclude: ["**/node_modules/**", "/dist/**"],
     lintOnStart: false,
     emitError: true,
   },
-  content: {
-    markdown: {
-      tags: {
-        p: "div",
-      },
-    },
+  tailwindcss: tailwindConfig,
+  mongoose: {
+    uri: process.env.MONGODB_URI,
+    options: {},
+    modelsDir: "server/models",
   },
+  i18n: i18nConfig,
 });
