@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { HamburgerMenuIcon } from "@radix-icons/vue";
 import { ref, type Ref } from "vue";
 import NavigationItem from "@/components/navigation/NavigationItem.vue";
-import Button from "@/components/ui/button/Button.vue";
+import MenuIcon from "@/components/ui/menu-icon/MenuIcon.vue";
 
 const collapse: Ref<boolean> = ref(false);
-
 const toggleCollapse = () => {
   collapse.value = !collapse.value;
 };
@@ -20,15 +18,31 @@ const toggleCollapse = () => {
         </h1>
       </div>
       <div class="flex items-center">
-        <Button variant="link" @click.prevent="toggleCollapse">
-          <HamburgerMenuIcon class="h-6 w-6" />
-        </Button>
-        <div v-show="collapse">
-          <NavigationItem variant="left" />
-        </div>
+        <MenuIcon :collapse="collapse" :toggle-collapse="toggleCollapse" />
+        <Transition name="slide-up">
+          <div v-show="collapse" class="absolute top-full w-full left-0 z-10">
+            <NavigationItem variant="left" class="bg-primary-foreground shadow py-5" />
+          </div>
+        </Transition>
       </div>
     </div>
   </header>
 </template>
 
-<style scoped></style>
+<style scoped>
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition:
+    opacity 0.5s,
+    transform 0.5s;
+}
+.slide-up-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+</style>

@@ -3,5 +3,8 @@ export default defineAppConfig({
   layout: "default",
   ui: {
     primary: "red",
+    imgAttrs: {
+      class: "avatar",
+    },
   },
 });

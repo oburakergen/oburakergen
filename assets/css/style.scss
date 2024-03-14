@@ -88,3 +88,13 @@
   opacity: 0;
   filter: blur(1rem);
 }
+
+.avatar {
+  animation: morph 8s ease-in-out infinite 1s;
+  background-blend-mode: multiply;
+  -webkit-box-shadow: inset 0 0 0 9px rgba(255,255,255,.3);
+  -moz-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
+  box-shadow: inset 0 0 0 9px rgba(255,255,255,.3);
+  object-position: 0 -0.5rem;
+  @apply w-32 h-32 rounded-full object-cover drop-shadow grayscale hover:grayscale-0 transition-all;
+}

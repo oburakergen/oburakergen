@@ -1,40 +1,25 @@
 <script setup lang="ts">
 import { Separator } from "@/components/ui/separator/index";
 
-const aboutMe = [
-  [
-    {
-      date: "2018-2019",
-      company: "Laraplay",
-      job: "Software Specialist",
-    },
-    {
-      date: "2019-2021",
-      company: "Vairosoft",
-      job: "Software Specialist",
-    },
-    {
-      date: "2022-2022",
-      company: "Icecube",
-      job: "Software Specialist",
-    },
-    {
-      date: "2022-2023",
-      company: "Arma Group Holding",
-      job: "Computer Engineering",
-    },
-  ],
-];
+const appConfig = useAppConfig();
+const aboutMe = {
+  title: "$t('about.title')",
+};
+console.log(aboutMe.title);
 </script>
 
 <template>
   <div class="relative w-full h-auto flex flex-col gap-8 py-16 font-['Montserrat'] text-gray-500">
-    <div class="me_title mb-8">
-      <h2 class="font-bold text-3xl text-primary subpixel-antialiased" v-text="$t('about.title')" />
-    </div>
-    <div class="me_photo">
-      <img src="https://avatars.githubusercontent.com/u/72213815?v=4" alt="me" class="rounded-full h-40 w-40" />
-    </div>
+    <h2 class="font-bold text-3xl text-primary subpixel-antialiased">{{ aboutMe.title }}</h2>
+    <NuxtPicture
+      :img-attrs="appConfig.ui.imgAttrs"
+      format="avif,webp"
+      loading="lazy"
+      legacy-format="jpeg"
+      src="/profile.jpeg"
+      preset="avatar"
+      :alt="$t('author')"
+    />
     <div class="me mt-8">
       <h2 class="font-bold text-xl text-primary" v-text="$t('author')" />
       <span class="text-gray-500" v-text="$t('job')" />

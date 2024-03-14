@@ -20,7 +20,14 @@ export default defineNuxtConfig({
     typeCheck: true,
     strict: true,
   },
-  modules: ["@nuxtjs/eslint-module", "@nuxtjs/tailwindcss", "nuxt-mongoose", "@nuxtjs/i18n", "shadcn-nuxt"],
+  modules: [
+    "@nuxtjs/eslint-module",
+    "@nuxtjs/tailwindcss",
+    "nuxt-mongoose",
+    "@nuxtjs/i18n",
+    "shadcn-nuxt",
+    "@nuxt/image",
+  ],
   eslint: {
     exclude: ["**/node_modules/**", "/dist/**"],
     lintOnStart: false,
@@ -33,4 +40,24 @@ export default defineNuxtConfig({
     modelsDir: "server/models",
   },
   i18n: i18nConfig,
+  image: {
+    presets: {
+      avatar: {
+        preset: "quality",
+        modifiers: {
+          format: "webp",
+          quality: 80,
+        },
+      },
+    },
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      "2xl": 1536,
+    },
+  },
 });

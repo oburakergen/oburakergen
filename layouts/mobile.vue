@@ -3,7 +3,7 @@ import Header from "@/components/header/Header.vue";
 </script>
 
 <template>
-  <div class="relative flex flex-col overflow-hidden">
+  <div class="relative flex flex-col h-screen">
     <Header />
     <slot />
   </div>
