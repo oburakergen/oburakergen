@@ -1,22 +1,69 @@
 <script setup lang="ts">
 import { Separator } from "@/components/ui/separator/index";
+import { Badge } from "~/components/ui/badge";
 
 const appConfig = useAppConfig();
-const aboutMe = {
-  title: "$t('about.title')",
+const about = {
+  title: "about.title",
+  me: "about.me",
+  avatar: "/profile.jpeg",
+  author: "author",
+  job: "job",
+  detail: "about.detail",
+  special: [
+    [
+      ["about.birthday", 1994],
+      ["about.website", "https://burak-ergen.com/"],
+      ["about.phone", "+90 544 934 20 52"],
+      ["about.city", "about.city"],
+    ],
+    [
+      ["about.nationality", "about.nationality"],
+      ["about.website", "https://burakergen.com/"],
+      ["about.study", "about.study"],
+      ["about.department", "about.department"],
+    ],
+  ],
+  cv: "about.cv",
+  known: "about.known",
+  technologies: ["React", "Vue", "Nuxt", "Next", "Mysql", "MongoDb", "ElasticSearch", "Docker"],
+  experiences: [
+    {
+      date: "2018-2019",
+      company: "Laraplay",
+      position: "Software Specialist",
+    },
+    {
+      date: "2019-2021",
+      company: "Vairosoft",
+      position: "Software Specialist",
+    },
+    {
+      date: "2022-2022",
+      company: "Icecube",
+      position: "Software Specialist",
+    },
+    {
+      date: "2022-2023",
+      company: "Arma Group Holding",
+      position: "Computer Engineering",
+    },
+  ],
 };
-console.log(aboutMe.title);
 </script>
 
 <template>
   <div class="relative w-full h-auto flex flex-col gap-8 py-16 font-['Montserrat'] text-gray-500">
-    <h2 class="font-bold text-3xl text-primary subpixel-antialiased">{{ aboutMe.title }}</h2>
+    <div class="subpixel-antialiased">
+      <Badge variant="secondary" class="text-base mb-2 uppercase font-light shadow-sm">{{ $t(about.title) }}</Badge>
+      <h2 class="font-bold text-3xl text-primary">{{ $t(about.me) }}</h2>
+    </div>
     <NuxtPicture
       :img-attrs="appConfig.ui.imgAttrs"
       format="avif,webp"
       loading="lazy"
       legacy-format="jpeg"
-      src="/profile.jpeg"
+      :src="about.avatar"
       preset="avatar"
       :alt="$t('author')"
     />

@@ -91,10 +91,22 @@
 
 .avatar {
   animation: morph 8s ease-in-out infinite 1s;
-  background-blend-mode: multiply;
-  -webkit-box-shadow: inset 0 0 0 9px rgba(255,255,255,.3);
-  -moz-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
-  box-shadow: inset 0 0 0 9px rgba(255,255,255,.3);
   object-position: 0 -0.5rem;
-  @apply w-32 h-32 rounded-full object-cover drop-shadow grayscale hover:grayscale-0 transition-all;
+  @apply w-40 h-40 rounded-full object-cover shadow drop-shadow grayscale hover:grayscale-0 transition-all mix-blend-multiply;
+}
+
+
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+  }
 }

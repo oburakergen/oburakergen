@@ -6,7 +6,8 @@ export default {
     "i am a JavaScript developer who excels at crafting dynamic application experiences and implementing innovative features that optimize performance and enhance user engagement.",
 
   about: {
-    title: "About Me",
+    title: "About",
+    me: "About Me",
     detail:
       "In the field of computer engineering, I have extensive experience in leading and successfully completing complex software projects. In every project I develop, I strategically utilize design patterns, thereby enhancing the efficiency and effectiveness of the products. My broad range of skills across both frontend and backend ensures that the solutions I provide are both sustainable and scalable. Innovation and continuous improvement are key values I have embraced throughout my career, and this equips me to handle the most challenging projects in the industry.",
     birthday: "Birthday",

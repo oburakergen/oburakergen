@@ -7,6 +7,7 @@ export default {
 
   about: {
     title: "Hakkımda",
+    me: "Benim Hakkımda",
     detail:
       "Bilgisayar mühendisliği alanında, karmaşık yazılım projelerini başarıyla yönetme ve tamamlama konusunda geniş bir deneyime sahibim. Geliştirdiğim her projede stratejik olarak tasarım kalıplarından yararlanarak ürünlerin verimliliğini ve etkinliğini artırıyorum. Hem ön uç hem de arka uç konularında geniş bir yetenek yelpazeme sahip olmam, sunduğum çözümlerin sürdürülebilir ve ölçeklenebilir olmasını sağlıyor. İnovasyon ve sürekli gelişim, kariyerim boyunca benimsediğim temel değerlerdir ve bu, endüstrideki en zorlu projelerle başa çıkmamı sağlıyor.",
     birthday: "Doğum Günü",
